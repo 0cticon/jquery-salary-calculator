@@ -5,6 +5,7 @@ $(readyNow);
 function readyNow() {
     console.log('rn');
     $('#submit').on('click', submitEmployee);
+    $('#delete').on('click', removeEmp);
 }
 
 // creating function to add emp data to table, clear fields
@@ -31,4 +32,12 @@ function submitEmployee() {
 
 
 }
+
+// remove employee from table
+function removeEmp() {
+    // console.log('remove employee');
+    $(this).parent().parent().remove();
+}
+
+removeEmp();
 
