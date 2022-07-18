@@ -51,12 +51,15 @@ function removeEmp() {
 }
 
 function appendTotalMonthly() {
-    console.log('in totalMonthly');
-    console.log(annualIncome);
     totalMonthly += annualIncome / 12;
     console.log(totalMonthly);
     $('#total-monthly').text('');
-    $('#total-monthly').text(`Total Monthly: $${totalMonthly}`);
+    $('#total-monthly').text(`Total Monthly: $${totalMonthly.toFixed(2)}`);
+    if (totalMonthly >= 20000) {
+        $('#total-monthly').css("background-color", "red");
+    };
+    // console.log('in totalMonthly');
+    // console.log(annualIncome);
 
 
 
