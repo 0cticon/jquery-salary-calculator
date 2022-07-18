@@ -10,6 +10,10 @@ h1 {
 
 }
 
+input {
+    margin: 10px 10 px;
+}
+
 #submit {
     background-color: teal;
     border: 1px solid black;
@@ -20,38 +24,11 @@ h1 {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 6px;
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
-
-
-
-}
-
-button:hover {
-    background-color: rgb(13, 174, 174);
-    /* Green */
-    color: white;
-}
-
-button:active {
-    background-color: rgb(0, 62, 62);
-    /* Green */
-    color: white;
-}
-
-table {
-    width: 100%;
-    text-align: center;
-
-    border-collapse: collapse;
-}
-
-table,
-th,
-td {
-    border: 1px solid;
+    margin-top: 10px;
 }
 
 #delete {
@@ -64,11 +41,54 @@ td {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#submit:hover {
+    background-color: rgb(13, 174, 174);
+    /* Green */
+    color: white;
+}
+
+#submit:active {
+    background-color: rgb(0, 62, 62);
+    /* Green */
+    color: white;
+}
+
+#delete:hover {
+    background-color: rgb(13, 174, 174);
+    /* Green */
+    color: white;
+}
+
+#delete:active {
+    background-color: rgb(0, 62, 62);
+    /* Green */
+    color: white;
+}
+
+table {
+    width: 100%;
+    text-align: center;
 
 
+    border-collapse: collapse;
+}
 
+table,
+th,
+td {
+    border: 1px solid;
+
+}
+
+#total-monthly {
+    display: flex;
+    justify-content: flex-end;
 }
